@@ -148,8 +148,6 @@ const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT_ergodo
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case DUAL_FUNC_0:
-            return TAPPING_TERM + 200;
         default:
             return TAPPING_TERM;
     }
