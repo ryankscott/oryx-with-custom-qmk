@@ -9,5 +9,5 @@
 #define DEBOUNCE 5
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "A0qqE/KrlPPa"
+#define SERIAL_NUMBER "A0qqE/6aMn5D"
 #define LAYER_STATE_16BIT

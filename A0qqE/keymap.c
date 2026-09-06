@@ -20,27 +20,27 @@ enum tap_dance_codes {
 // Launcher hotkey: bind Hyper+C in Raycast / macOS Shortcuts to open Claude.
 #define OPEN_CLAUDE HYPR(KC_C)
 
-#define DUAL_FUNC_0 LT(15, KC_B)
-#define DUAL_FUNC_1 LT(10, KC_F2)
-#define DUAL_FUNC_2 LT(14, KC_X)
-#define DUAL_FUNC_3 LT(12, KC_6)
-#define DUAL_FUNC_4 LT(7, KC_S)
-#define DUAL_FUNC_5 LT(2, KC_F20)
-#define DUAL_FUNC_6 LT(11, KC_F1)
-#define DUAL_FUNC_7 LT(1, KC_S)
-#define DUAL_FUNC_8 LT(4, KC_P)
-#define DUAL_FUNC_9 LT(5, KC_U)
-#define DUAL_FUNC_10 LT(3, KC_F7)
-#define DUAL_FUNC_11 LT(4, KC_9)
-#define DUAL_FUNC_12 LT(6, KC_P)
-#define DUAL_FUNC_13 LT(14, KC_F17)
-#define DUAL_FUNC_14 LT(1, KC_F1)
-#define DUAL_FUNC_15 LT(6, KC_F7)
+#define DUAL_FUNC_0 LT(2, KC_I)
+#define DUAL_FUNC_1 LT(12, KC_I)
+#define DUAL_FUNC_2 LT(4, KC_K)
+#define DUAL_FUNC_3 LT(4, KC_F22)
+#define DUAL_FUNC_4 LT(15, KC_F6)
+#define DUAL_FUNC_5 LT(15, KC_Z)
+#define DUAL_FUNC_6 LT(11, KC_J)
+#define DUAL_FUNC_7 LT(15, KC_F20)
+#define DUAL_FUNC_8 LT(6, KC_F19)
+#define DUAL_FUNC_9 LT(5, KC_F1)
+#define DUAL_FUNC_10 LT(1, KC_O)
+#define DUAL_FUNC_11 LT(13, KC_F4)
+#define DUAL_FUNC_12 LT(1, KC_1)
+#define DUAL_FUNC_13 LT(11, KC_F8)
+#define DUAL_FUNC_14 LT(14, KC_F12)
+#define DUAL_FUNC_15 LT(7, KC_9)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox_pretty(
     LGUI(LCTL(KC_Q)),KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 TO(7),          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    LGUI(KC_BSLS),  KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           RGUI(RSFT(KC_4)),                                RGUI(RCTL(KC_SPACE)),KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_TRANSPARENT,
+    LGUI(KC_BSLS),  KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           RGUI(RSFT(KC_5)),                                RGUI(RCTL(KC_SPACE)),KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_TRANSPARENT,
     KC_LEFT_SHIFT,  MT(MOD_LGUI, KC_A),MT(MOD_LALT, KC_S),MT(MOD_LCTL, KC_D),KC_F,           KC_G,                                                                           KC_H,           KC_J,           MT(MOD_LCTL, KC_K),MT(MOD_LALT, KC_L),MT(MOD_RGUI, KC_SCLN),KC_RIGHT_SHIFT,
     LALT(LSFT(KC_MINUS)),KC_Z,           MT(MOD_RALT, KC_X),KC_C,           KC_V,           KC_B,           KC_HYPR,                                        RGUI(RSFT(KC_5)),KC_N,           KC_M,           KC_COMMA,       MT(MOD_RALT, KC_DOT),KC_SLASH,       KC_TRANSPARENT,
     DUAL_FUNC_0,    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, LT(3, KC_ESCAPE),                                                                                                LT(6, KC_QUOTE),KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, DUAL_FUNC_1,
