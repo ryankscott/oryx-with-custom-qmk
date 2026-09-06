@@ -17,6 +17,9 @@ enum tap_dance_codes {
   DANCE_2,
 };
 
+// Launcher hotkey: bind Hyper+C in Raycast / macOS Shortcuts to open Claude.
+#define OPEN_CLAUDE HYPR(KC_C)
+
 #define DUAL_FUNC_0 LT(15, KC_B)
 #define DUAL_FUNC_1 LT(10, KC_F2)
 #define DUAL_FUNC_2 LT(14, KC_X)
@@ -43,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     DUAL_FUNC_0,    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, LT(3, KC_ESCAPE),                                                                                                LT(6, KC_QUOTE),KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, DUAL_FUNC_1,
                                                                                                     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
                                                                                                                     KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                    LT(1, KC_SPACE),LT(2, KC_TAB),  KC_TRANSPARENT, KC_TRANSPARENT, LT(5, KC_ENTER),LT(4, KC_BSPC)
+                                                                                    LT(1, KC_SPACE),LT(2, KC_TAB),  OPEN_CLAUDE,    KC_TRANSPARENT, LT(5, KC_ENTER),LT(4, KC_BSPC)
   ),
   [1] = LAYOUT_ergodox_pretty(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
